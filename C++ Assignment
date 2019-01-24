@@ -1,0 +1,56 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+struct Student {
+	string name;
+	int stuID;
+	string email;
+};
+
+void showInfo(Student*studentArray, int stuCount) {
+	int stuCount;
+	cout << "Student Info: "<<endl <<endl<<
+		"\t\tStudent Name"<<"\t\tStudent ID"<<"\t\tStudent Email" ;
+
+	for (int i = 0; i <= stuCount; i++)
+	{
+		cout<< studentArray.name[i]<<"\t\t"<<studentArray.stuID[i]<<"\t\t"<< studentArray.email[i];
+	}
+	cout << endl;
+}
+
+int main() {
+	Student studentArray[15];
+
+	studentArray[0].name = "bob McBoberston";
+	studentArray[0].stuID = 01234;
+	studentArray[0].email = "bob@email.edu";
+
+
+	studentArray[1].name = "Shelby Donald";
+	studentArray[1].stuID = 01234;
+	studentArray[1].email = "bob@email.edu";
+
+
+
+	studentArray[2].name = "ronald mcdonald";
+	studentArray[2].stuID = 01234;
+	studentArray[2].email = "bob@email.edu";
+
+
+	studentArray[3].name = "bob McBoberston";
+	studentArray[3].stuID = 01234;
+	studentArray[3].email = "bob@email.edu";
+
+	showInfo(studentArray, stuCount);
+
+	
+
+
+
+	return 0;
+}
